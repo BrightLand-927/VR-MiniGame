@@ -1,7 +1,7 @@
 {
    "action_manifest_version" : 0,
    "alias_info" : {},
-   "app_key" : "application.generated.unity.vr.exe",
+   "app_key" : "application.generated.unity.vrminigame.exe",
    "bindings" : {
       "/actions/buggy" : {
          "sources" : [
@@ -168,23 +168,6 @@
             },
             {
                "inputs" : {
-                  "east" : {
-                     "output" : "/actions/default/in/snapturnright"
-                  },
-                  "west" : {
-                     "output" : "/actions/default/in/snapturnleft"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "deadzone_pct" : "85",
-                  "overlap_pct" : "0",
-                  "sub_mode" : "touch"
-               },
-               "path" : "/user/hand/right/input/joystick"
-            },
-            {
-               "inputs" : {
                   "click" : {
                      "output" : "/actions/default/in/grabgrip"
                   }
@@ -261,8 +244,8 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "vive_cosmos_controller",
-   "description" : ":)",
-   "name" : "VR Controller Setting #1",
+   "description" : "",
+   "name" : "vive_cosmos_controller",
    "options" : {},
    "simulated_actions" : []
 }
