@@ -20,9 +20,10 @@ public class PlayerController : MonoBehaviour
         if (input.axis.magnitude <= .1f) return;
 
         Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(input.axis.x, 0, input.axis.y));
+        Vector3 YAXis = new Vector3(0f, Mathf.PingPong(Time.time * 3f, 20f));
+
         //transform.position += speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up);
-        _characterController.Move(speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up) - new Vector3(0f, Mathf.PingPong(9.81f, 10), 0f) * Time.deltaTime);
+        _characterController.Move(speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, YAXis) - new Vector3(0f, Mathf.PingPong(9.81f, 10), 0f) * Time.deltaTime);
     }
-
-
+    
 }
