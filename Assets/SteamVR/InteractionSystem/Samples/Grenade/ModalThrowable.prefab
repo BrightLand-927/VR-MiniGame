@@ -367,7 +367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explodePartPrefab: {fileID: 1000011210241306, guid: 8a2487c189a464148aadc3af2effa7c8,
     type: 3}
-  explodeCount: 3
+  explodeCount: 10
   minMagnitudeToExplode: 1
 --- !u!114 &114000011668634522
 MonoBehaviour:
