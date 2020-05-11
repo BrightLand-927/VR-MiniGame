@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FlowerOnFloor : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.layer.Equals(8))
         {
             this.transform.localRotation = Quaternion.Euler(Vector3.zero);
-            Debug.Log("On Floor");
+            //Debug.Log("On Floor");
         }
     }
 }

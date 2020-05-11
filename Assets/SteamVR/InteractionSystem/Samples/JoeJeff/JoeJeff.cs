@@ -68,9 +68,13 @@ namespace Valve.VR.InteractionSystem.Sample
                 FixRotation();
         }
 
+        Vector3 eulers;
+        private void OnEnable()
+        {
+            eulers = new Vector3(0f, Random.Range(0, 360f), 0f);
+        }
         private void FixRotation()
         {
-            Vector3 eulers = transform.eulerAngles;
             eulers.x = 0;
             eulers.z = 0;
             Quaternion targetRotation = Quaternion.Euler(eulers);

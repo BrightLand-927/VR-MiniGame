@@ -13,7 +13,7 @@ public class Tree_Start_At_Zero_YAxis : MonoBehaviour
     {
         if(other.gameObject.layer.Equals(8))
         {
-            Debug.Log("On Floor");
+            //Debug.Log("On Floor");
             StartCoroutine(Increase());
         }
     }

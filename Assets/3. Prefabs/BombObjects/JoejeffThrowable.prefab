@@ -41,10 +41,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.01
-  m_Height: 0.01
+  m_Radius: 0.004
+  m_Height: 0
   m_Direction: 1
-  m_Center: {x: -3.0316486e-13, y: 0.0000025431314, z: -3.031649e-13}
+  m_Center: {x: -3.032241e-13, y: 0.0000025436284, z: -3.032241e-13}
 --- !u!1 &7669473304988921986
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 7669473307973200276}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 3815685267078546268}
   - {fileID: 7665910700264580916}
@@ -211,11 +211,11 @@ MonoBehaviour:
     actionSetPath: 
   hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 1
+  hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   useHandObjectAttachmentPoint: 0
-  attachEaseIn: 0
+  attachEaseIn: 1
   snapAttachEaseInCurve:
     serializedVersion: 2
     m_Curve:
@@ -368,10 +368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013214146096fa74898db952aa9b2da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explodePartPrefab: {fileID: 1000011882893550, guid: 48530aab98abaa541acf2cf3f3f06d20,
+  explodePartPrefab: {fileID: 7744365206384710337, guid: 299c599cd92b74548977df8cea08cbaf,
     type: 3}
-  explodeCount: 3
-  minMagnitudeToExplode: 1
+  explodeCount: 1
+  minMagnitudeToExplode: 3
 --- !u!114 &7780529930403597866
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 8416802790681868947}
   - component: {fileID: 6898851661103377061}
   - component: {fileID: 8455774805867359148}
+  - component: {fileID: 189626482345713753}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -223,7 +224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8455774805867359149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3938, y: 0.05, z: 4.9833}
+  m_LocalPosition: {x: 0.3938, y: 5, z: 4.9833}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8454745368788440191}
@@ -390,5 +391,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.12380463, y: 0.22372697, z: 0.120731354}
-  m_Center: {x: -0.008482635, y: 0.08850541, z: -0.004981041}
+  m_Size: {x: 0.1441924, y: 0.21997656, z: 0.13574362}
+  m_Center: {x: -0.008986622, y: 0.09468336, z: 0.00055766106}
+--- !u!114 &189626482345713753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8455774805867359149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e952a9820d9669d49bc5a88f562e55aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0
