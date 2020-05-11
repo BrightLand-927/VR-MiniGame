@@ -10,6 +10,9 @@ public class Change_Current_Bomb : MonoBehaviour
     public GameObject[] BombPrefab;
     public Rigidbody attachPoint;
 
+    public AudioSource buff;
+    public AudioSource deBuff;
+
     GameObject currentBomb;
 
     // Snap Trigger Button
@@ -70,7 +73,7 @@ public class Change_Current_Bomb : MonoBehaviour
             if (snapLeftAction.GetStateDown(SteamVR_Input_Sources.Any))
             {
                 Destroy(currentBomb);
-
+                buff.Play();
                 bombIndex--;
                 if (bombIndex < 0)
                     bombIndex = BombPrefab.Length - 1;
@@ -86,7 +89,7 @@ public class Change_Current_Bomb : MonoBehaviour
             else if (snapRightAction.GetStateDown(SteamVR_Input_Sources.Any))
             {
                 Destroy(currentBomb);
-
+                deBuff.Play();
                 bombIndex++;
                 if (bombIndex >= BombPrefab.Length)
                     bombIndex = 0;
